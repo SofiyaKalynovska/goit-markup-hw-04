@@ -231,6 +231,14 @@ header {
 }
 /* Mission icons */
 .mission-icons{
+  width: 70px;
+  height: 70px;
+}
+.mission-icon-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 270px;
   height: 120px;
   background: #F5F4FA;
@@ -306,29 +314,34 @@ header {
   line-height: 1.19;
   margin-bottom: 16px;
 }
+/* Staff social icons */
 .staff-icons-list{
   display: flex;
-  align-items: center;
+  justify-content: space-between;
   margin-bottom: 30px;
   margin-left: 32px;
   margin-right: 32px;
   padding: 0;
 }
-.staff-icon{
+.staff-icon-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  fill: var(--main-icon-color);
-
+  color: var(--main-icon-color);
 }
-.staff-icons-item + .staff-icons-item{
-  margin-left: 10px;
+.staff-icon-link:hover, .staff-icon-link:focus{
+ background-color: var(--focuse-color);
+ color: var(--second-icon-color);
 }
-.staff-icon:hover{
-  background-color: var(--focuse-color);
-  fill: var(--second-icon-color);
-  border-radius: 50%;
+.staff-icon{
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
+/* END Staff social icons */
 /* FLEX for staff-list */
 .staff-list {
   display: flex;
@@ -358,24 +371,27 @@ header {
 /* FLEX for clients icons */
 .clients-list{
   display: flex;
-  align-items: center;
+  justify-content: space-between;
 }
 .clients-icons{
-  display: block;
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
+}
+.clients-list-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 92px;
   border: 1px solid #AFB1B8;
   box-sizing: border-box;
   border-radius: 4px;
-  fill: var(--main-icon-color);
+  color: var(--main-icon-color);
 }
-.clients-icons:hover,
-.clients-icons:focus{
-  fill: var(--focuse-color);
-  border: 1px solid var(--focuse-color);
-}
-.clients-list-item + .clients-list-item{
-  margin-left: 30px;
+.clients-list-link:hover, .clients-list-link:focus{
+  color: var(--focuse-color);
+  border-color: var(--focuse-color);
 }
 /* FLEX for clients icons */
 /* END fifth section */
@@ -526,21 +542,28 @@ margin-right: 70px;
   text-transform: uppercase;
   color: var(--second-title-color);
 
-margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 /* Footer social icons style */
 .social-icons-list{
   display: flex;
 }
-.social-icon{
+.social-icon-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  fill: var(--second-icon-color);
-  background-color:  rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
 }
-.social-icon:hover{
+.social-icon-link:hover, .social-icon-link:focus{
   background-color: var(--focuse-color);
+}
+.social-icon{
+  width: 20px;
+  height: 20px;
+  fill: var(--second-icon-color);
 }
 .social-icons-item + .social-icons-item{
   margin-left: 10px;
